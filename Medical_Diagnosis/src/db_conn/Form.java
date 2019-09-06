@@ -295,7 +295,7 @@ public class Form extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 3, 13)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma",3, 13)); // NOI18N
         jLabel1.setText("* Please Fill the given Form Carefully");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -665,7 +665,7 @@ public class Form extends javax.swing.JFrame {
         public void ir()
     {
      try{   
-         Class.forName("com.mysql.jdbc.Driver");
+         Class.forName("com.mysql.cj.jdbc.Driver");
 
          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/medical","root","Subham@8991");
          String sql="select distinct remedy from internal where sy1=? and sy2=? and sy3=? and disease=?";
