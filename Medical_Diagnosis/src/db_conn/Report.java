@@ -55,7 +55,7 @@ public class Report extends javax.swing.JFrame {
        
            
          pstmt.executeUpdate();
-           System.out.println("Data entered");
+           System.out.println("Data entered is here");
             conn.close();
      }
      
